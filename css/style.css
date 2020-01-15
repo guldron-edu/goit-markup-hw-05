@@ -381,7 +381,7 @@ body {
   cursor: pointer;
 }
 
-.new-collection .item::before {
+.new-collection .link::before {
   display: none;
   content: '';
   position: absolute;
@@ -405,12 +405,12 @@ body {
 .new-collection .link:focus .price {
   background: rgb(127, 217, 199);
 }
-.new-collection .item:hover::before {
+.new-collection .link:hover::before {
   display: block;
 }
-/* .new-collection .link:focus .item::before {
+.new-collection .link:focus::before {
   display: block;
-} */
+}
 
 .new-collection .label {
   position: absolute;
@@ -516,7 +516,7 @@ body {
   cursor: pointer;
 }
 
-.gallery .item::before {
+.gallery .link::before {
   display: none;
   content: '';
   position: absolute;
@@ -534,7 +534,11 @@ body {
   background: rgb(127, 217, 199);
 }
 
-.gallery .item:hover::before {
+.gallery .link:hover::before {
+  display: block;
+}
+
+.gallery .link:focus::before {
   display: block;
 }
 
